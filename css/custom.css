@@ -1,0 +1,111 @@
+/*header*/
+body{
+    
+}
+
+.galreikssito{
+    background: url(/images/BG.png) right no-repeat;
+    
+}
+nav {
+    width: 100%;
+    padding: 1%;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style: none;
+    border-radius: 24px;
+    background: var(--osler-gray-white, #FFF);
+    /* Card Shadow Gray80 5% */
+    box-shadow: 0px 8px 16px 0px rgba(47, 60, 51, 0.05);
+    width: 80px;
+    height: 80px;
+    padding: 28px;
+}
+
+#header-svg{
+    background: #84cc16;
+    background: var(--healing-green-50, #84CC16);
+    box-shadow: 0px 16px 32px 0px rgba(132, 204, 22, 0.25);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*box one*/
+
+.box_one_first span {
+    color: #84cc16;
+}
+
+.box_one_first h1{
+    color: var(--osler-gray-80, #2F3C33);
+    /* Heading xl/ExtraBold */
+    font-family: Nunito;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 68px; /* 113.333% */
+    letter-spacing: -1.8px;
+}
+
+.box_one_first article{
+    color: var(--osler-gray-60, #647067);
+    /* Paragraph/2xl */
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: -0.24px;
+}
+
+.box_one_elements{
+    display:flex;
+    justify-content: space-around;
+}
+
+.box_one_elements p{
+    color: var(--osler-gray-60, #647067);
+    /* Label/md */
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.box_one_first a{
+    display: block flex;
+    block-size: 8%;
+    width: 40%;
+    justify-content: center;
+    align-items: center;    
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 24px;
+    background: var(--osler-gray-80, #2F3C33);
+}
+
+/*box Two*/
+
+#doctor {
+    position: absolute;
+    padding-right: 40%;
+}
+
+#pulse{
+    position: absolute;
+}
+
+#nutrition{
+    position: absolute;
+}
