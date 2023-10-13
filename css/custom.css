@@ -1,16 +1,14 @@
-/*header*/
-body{
-    
-}
+/*cia kur nesugalvojau kaip kitaip padaryt, kad rodytu backgraunda, bet responsive vistiek nemeta taip kaip dizaine.. */
 
 .galreikssito{
-    background: url(/images/BG.png) right no-repeat;
-    
+    background: url(/spalio12/images/BG.png) right no-repeat;
 }
+
+/*header*/
+
 nav {
     width: 100%;
     padding: 1%;
-    
 }
 
 nav ul{
@@ -37,6 +35,8 @@ nav ul li{
     justify-content: center;
     align-items: center;
 }
+
+/*first part*/
 
 /*box one*/
 
@@ -95,20 +95,349 @@ nav ul li{
     background: var(--osler-gray-80, #2F3C33);
 }
 
+#scrolldown{
+    display: block flex;
+    padding: 12px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: var(--osler-gray-10, #F5F5F5);
+    color: var(--osler-gray-80, #2F3C33);
+    /* Label/sm */
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
 /*box Two*/
 
 #doctor {
     position: absolute;
-    padding-top: 20%;
-    padding-right: 20%;
-
+    padding-right: 40%;
 }
 
 #pulse{
     position: absolute;
-    
 }
 
 #nutrition{
     position: absolute;
+    padding: 15% 0 0 30%
+}
+
+@media (max-width: 768px) {
+    #pulse {
+        padding:20% 0 40% 80% ;
+    }
+    #nutrition {
+        padding:30% 80% 2% 0 ;
+    } 
+    #doctor {
+        display: none;
+    }
+}
+
+/*second part*/
+
+.secondcontainer{
+    display: flex;
+    padding: 128px 118px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 180px;
+    background: var(--osler-gray-80, #2F3C33);
+}
+
+.secondcontainer .row {
+    justify-content: space-between;
+}
+.second_container_right a{
+    margin:2% 0 2% 0;
+    display: block;
+    width: 30%;
+    align-items: center;
+    text-decoration: none;
+    height: 48px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background: var(--healing-green-50, #84CC16);
+    color: var(--osler-gray-white, #FFF);
+    text-align: center;
+    /* Text md/Bold */
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.32px;
+}
+.second_container_right p{
+    color: var(--osler-gray-20, #E3E4E3);
+    /* Paragraph/xl */
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    letter-spacing: -0.2px;
+}
+
+.second_container_left article{
+    color: var(--osler-gray-white, #FFF);
+    /* Heading lg/ExtraBold */
+    font-family: Nunito;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -1.44px;
+    flex-shrink: 0;
+}
+
+/*third part*/
+
+.thirdcontainer{
+    border-radius: 180px;
+    background: var(--healing-green-50, #84CC16);
+    height:100%;
+    margin-top: 3%;
+    padding: 5%;
+}
+
+.thirdcontainer h3{
+    margin-bottom: 5%;
+    text-align: center;
+    color: var(--osler-gray-white, #FFF);
+    /* Heading lg/ExtraBold */
+    font-family: Nunito;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -1.44px;
+}
+
+/*fourth part*/
+
+.fourth{
+    border-radius: 180px;
+    background: var(--osler-gray-10, #F5F5F5);
+    text-align: center;
+    margin-top: 3%;
+}
+
+.four_box_one{
+   display:flex;
+   padding: 5% 15% 5% 15%;
+   justify-content: space-between;
+}
+
+.four_box_one article{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    /* Heading lg/ExtraBold */
+    font-family: Nunito;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -1.44px;
+}
+
+.four_box_one p{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    /* Text md/Bold */
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    border-radius: 18px;
+    border: 1px solid var(--osler-gray-60, #647067);
+    display: block;
+    width: 10%;
+    padding-top: 1%;
+}
+
+.fourth .row a{
+    display: flex;
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 24px;
+    background: var(--osler-gray-80, #2F3C33);
+    color: var(--osler-gray-white, #FFF);
+    /* Text lg/ExtraBold */
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    text-decoration: none;
+    width:20%;
+    margin: 2% 40% 2% 40%;
+}
+
+@media (min-width: 768px){
+    .four_box_two_ss {
+        display:none;
+    }
+}
+
+@media (max-width: 768px){
+    .four_box_two_xl {
+        display: none;
+    }
+}
+
+/*fifth part*/
+
+.fifth{
+    margin:8%
+}
+
+.fifth_buttons{
+    display: block;
+    border-radius: 24px;
+    background: var(--osler-gray-80, #2F3C33);   
+}
+
+.fifth_mini_list{
+    border: none !important;
+}
+
+.fifth_buttons a{
+    color: var(--osler-gray-white, #FFF);
+    /* Text lg/ExtraBold */
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+.fifth h2{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    /* Heading xl/ExtraBold */
+    font-family: Nunito;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 68px; /* 113.333% */
+    letter-spacing: -1.8px;
+    margin-bottom: 5%;
+}
+
+.fifth a{
+    height: 48px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    border: 1px solid var(--osler-gray-60, #647067);
+    color: var(--osler-gray-60, #647067);
+    text-align: center;
+    /* Text md/Bold */
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    text-decoration: none;
+    display: block;
+    width: 25%;
+    margin-bottom: 5%;
+}
+
+.fifth article{
+    color: var(--osler-gray-80, #2F3C33);
+    /* Heading lg/ExtraBold */
+    font-family: Nunito;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -1.44px;
+}
+
+.feature_one .feature_two .feature_three .feature_four .feature_five .feature_six{
+    width: 40%;
+}
+
+.fifth p{
+    color: var(--osler-gray-60, #647067);
+    /* Paragraph/lg */
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    letter-spacing: -0.18px;
+}
+
+.fifth_box{
+    display: flex;
+}
+
+.fifth_box_two{
+    margin-left: 20%;
+}
+
+.fifth_box_one .fifth_box_two article{
+    color: var(--osler-gray-80, #2F3C33);
+    /* Heading sm/ExtraBold */
+    font-family: Nunito;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 38px; /* 126.667% */
+    letter-spacing: -0.9px;
+}
+
+.fifth_box_one article span{
+    color: var(--remote-red-50, #F43F5E);
+    /* Heading sm/ExtraBold */
+    font-family: Nunito;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: -0.9px;
+}
+
+.fifth_box_two article span{
+    color: var(--remote-red-50, #F43F5E);
+    /* Heading sm/ExtraBold */
+    font-family: Nunito;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: -0.9px;
+}
+
+.fifth_box_one .fifth_box_two p{
+    color: var(--osler-gray-60, #647067);
+    /* Text lg/Bold */
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.36px;
 }
