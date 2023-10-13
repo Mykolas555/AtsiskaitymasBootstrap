@@ -1,7 +1,7 @@
 /*cia kur nesugalvojau kaip kitaip padaryt, kad rodytu backgraunda, bet responsive vistiek nemeta taip kaip dizaine.. */
 
 .galreikssito{
-    background: url(/spalio12/images/BG.png) right no-repeat;
+    background: url(/images/BG.png) right no-repeat;
 }
 
 /*header*/
@@ -37,6 +37,7 @@ nav ul li{
 }
 
 /*first part*/
+
 
 /*box one*/
 
@@ -115,18 +116,24 @@ nav ul li{
 
 /*box Two*/
 
+#iphone{
+    
+}
+
 #doctor {
-    position: absolute;
-    padding-right: 40%;
+    position:absolute;
+    padding-right: 20%;
+    padding-top: 15%;
 }
 
 #pulse{
-    position: absolute;
+    position:absolute;
+    padding: 0 20% 15% 45%;
 }
 
 #nutrition{
-    position: absolute;
-    padding: 15% 0 0 30%
+    position:absolute;
+    padding: 10% 20% 0% 45% 
 }
 
 @media (max-width: 768px) {
@@ -201,6 +208,12 @@ nav ul li{
     flex-shrink: 0;
 }
 
+@media (max-width: 768px){
+    .responsive_none {
+        display: none;
+    }
+}
+
 /*third part*/
 
 .thirdcontainer{
@@ -223,6 +236,8 @@ nav ul li{
     line-height: 56px; /* 116.667% */
     letter-spacing: -1.44px;
 }
+
+
 
 /*fourth part*/
 
@@ -305,13 +320,18 @@ nav ul li{
 /*fifth part*/
 
 .fifth{
-    margin:8%
+    margin:8% 10% 0 30%
+}
+
+.fifth .row{
+    align-items: center;
 }
 
 .fifth_buttons{
     display: block;
     border-radius: 24px;
-    background: var(--osler-gray-80, #2F3C33);   
+    background: var(--osler-gray-80, #2F3C33); 
+    width:250px !important;  
 }
 
 .fifth_mini_list{
@@ -319,7 +339,7 @@ nav ul li{
 }
 
 .fifth_buttons a{
-    color: var(--osler-gray-white, #FFF);
+    color: #FFF !important;
     /* Text lg/ExtraBold */
     font-family: Nunito;
     font-size: 18px;
@@ -327,6 +347,7 @@ nav ul li{
     font-weight: 800;
     line-height: normal;
     letter-spacing: -0.36px;
+
 }
 
 .fifth h2{
@@ -375,8 +396,8 @@ nav ul li{
     letter-spacing: -1.44px;
 }
 
-.feature_one .feature_two .feature_three .feature_four .feature_five .feature_six{
-    width: 40%;
+.feature_one .feature_two .feature_three .feature_four .feature_five .feature_six {
+   
 }
 
 .fifth p{
