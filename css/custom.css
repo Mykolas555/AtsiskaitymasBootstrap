@@ -96,6 +96,12 @@ nav ul li{
     background: var(--osler-gray-80, #2F3C33);
 }
 
+@media (max-width: 768px){
+    .box_one_first a{
+        width: 100%;
+    }
+}
+
 #scrolldown{
     display: block flex;
     padding: 12px;
@@ -114,10 +120,17 @@ nav ul li{
     text-transform: uppercase;
 }
 
-/*box Two*/
+@media (max-width: 768px){
+    #scrolldown{
+        display: none;
+    }
+}
 
-#iphone{
-    
+/*box Two*/
+@media (max-width: 768px){
+    .box_two_first{
+        margin-top: 15%;
+    }
 }
 
 #doctor {
@@ -152,7 +165,8 @@ nav ul li{
 
 .secondcontainer{
     display: flex;
-    padding: 128px 118px;
+    margin-top: 3%;
+    padding:15%;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
@@ -166,7 +180,7 @@ nav ul li{
 .second_container_right a{
     margin:2% 0 2% 0;
     display: block;
-    width: 30%;
+    width: 12.5rem;
     align-items: center;
     text-decoration: none;
     height: 48px;
@@ -221,7 +235,7 @@ nav ul li{
     background: var(--healing-green-50, #84CC16);
     height:100%;
     margin-top: 3%;
-    padding: 5%;
+    padding: 15%;
 }
 
 .thirdcontainer h3{
@@ -246,6 +260,7 @@ nav ul li{
     background: var(--osler-gray-10, #F5F5F5);
     text-align: center;
     margin-top: 3%;
+    padding: 10%;
 }
 
 .four_box_one{
@@ -286,7 +301,6 @@ nav ul li{
 .fourth .row a{
     display: flex;
     height: 64px;
-    padding: 16px 32px;
     justify-content: center;
     align-items: center;
     gap: 32px;
@@ -301,8 +315,9 @@ nav ul li{
     line-height: normal;
     letter-spacing: -0.36px;
     text-decoration: none;
-    width:20%;
-    margin: 2% 40% 2% 40%;
+    width:70%;
+    margin-top:3%;
+    margin:0 auto;
 }
 
 @media (min-width: 768px){
@@ -319,11 +334,12 @@ nav ul li{
 
 /*fifth part*/
 
-.fifth{
-    margin:8% 10% 0 30%
+.fifth {
+    margin-top: 5%;
 }
 
 .fifth .row{
+    margin:8% 10% 0 10%;
     align-items: center;
 }
 
@@ -363,7 +379,9 @@ nav ul li{
     margin-bottom: 5%;
 }
 
-.fifth a{
+.fifth h3{
+    display: block;
+    width: 50%;
     height: 48px;
     padding: 16px 24px;
     justify-content: center;
@@ -371,6 +389,40 @@ nav ul li{
     border-radius: 18px;
     border: 1px solid var(--osler-gray-60, #647067);
     color: var(--osler-gray-60, #647067);
+    text-align: center;
+    /* Text md/Bold */
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.32px;
+}
+
+.fifth_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fifth_mini_list{
+    color: var(--osler-gray-70, #48524B);
+    /* Text lg/ExtraBold */
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+.fifth a{
+    height: 48px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    border: 1px solid var(--osler-gray-60, #647067);
+    color: var(--osler-gray-60, #fff);
     text-align: center;
     /* Text md/Bold */
     font-family: Nunito;
@@ -396,10 +448,6 @@ nav ul li{
     letter-spacing: -1.44px;
 }
 
-.feature_one .feature_two .feature_three .feature_four .feature_five .feature_six {
-   
-}
-
 .fifth p{
     color: var(--osler-gray-60, #647067);
     /* Paragraph/lg */
@@ -411,12 +459,9 @@ nav ul li{
     letter-spacing: -0.18px;
 }
 
-.fifth_box{
-    display: flex;
-}
 
 .fifth_box_two{
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 .fifth_box_one .fifth_box_two article{
@@ -461,4 +506,135 @@ nav ul li{
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.36px;
+}
+
+/*sixth part*/
+
+.sixth{
+    gap: 10px;
+    border-radius: 180px;
+    background: var(--healing-green-50, #84CC16);
+    padding:5%;
+    margin-top: 3%;
+}
+
+.sixth .row{
+    align-items: center;
+    justify-content: center;
+    padding: 1% 0 5% 0;
+}
+
+.sixth h3{
+    color: var(--osler-gray-white, #FFF);
+    text-align: center;
+    /* Text md/Bold */
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    border-radius: 18px;
+    border: 1px solid var(--osler-gray-white, #ffffff);
+    padding-top: 5%;
+    display: block;
+    width: 30%;
+    padding: 2%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.sixth article{
+    color: var(--osler-gray-white, #FFF);
+    text-align: center;
+    /* Heading xl/ExtraBold */
+    font-family: Nunito;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 68px; /* 113.333% */
+    letter-spacing: -1.8px;
+    padding: 3% 0 3% 0;
+}
+
+.sixth .row .six_box_one, .six_box_two, .six_box_three, .six_box_four, .six_box_five, .six_box_six{
+    border-radius: 64px;
+    background: var(--osler-gray-white, #FFF);
+    /* Card Shadow Gray80 5% */
+    box-shadow: 0px 8px 16px 0px rgba(47, 60, 51, 0.05);
+    padding: 1%;
+}
+
+.sixth .row .six_box_one article, .six_box_two article, .six_box_three article, .six_box_four article, .six_box_five article, .six_box_six article{
+    color: var(--osler-gray-90, #1E2721);
+    /* Heading xs/ExtraBold */
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.72px;
+    text-align: left;
+}
+
+.sixth .row .six_box_one p, .six_box_two p, .six_box_three p, .six_box_four p, .six_box_five p, .six_box_six p{
+    color: var(--osler-gray-60, #647067);
+    /* Paragraph/xl */
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    letter-spacing: -0.2px;
+    text-align: left;
+}
+
+/*seven part*/
+
+.seven_header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 10% 5% 10%;
+}
+
+.seven h3 {
+    color: var(--osler-gray-80, #2F3C33);
+    font-family: Nunito;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -1.44px;
+}
+
+.seven a {
+    border-radius: 24px;
+    background: var(--osler-gray-80, #2F3C33);
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    text-decoration: none;
+    color: var(--osler-gray-white, #FFF);
+    /* Text lg/ExtraBold */
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+.seven_slider {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20% 0 20%;
+}
+
+@media (max-width: 768px) {
+    .seven_slider{
+        margin: 0 20% 0 20%;
+        display: contents;
+    }
 }
