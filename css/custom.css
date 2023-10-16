@@ -562,7 +562,7 @@ nav ul li{
     background: var(--osler-gray-white, #FFF);
     /* Card Shadow Gray80 5% */
     box-shadow: 0px 8px 16px 0px rgba(47, 60, 51, 0.05);
-    padding: 1%;
+    padding: 6%;
 }
 
 .sixth .row .six_box_one article, .six_box_two article, .six_box_three article, .six_box_four article, .six_box_five article, .six_box_six article{
@@ -629,7 +629,7 @@ nav ul li{
 .seven_slider {
     display: flex;
     justify-content: space-between;
-    margin: 0 20% 0 20%;
+    margin: 0 5% 0 5%;
 }
 
 @media (max-width: 768px) {
@@ -637,4 +637,110 @@ nav ul li{
         margin: 0 20% 0 20%;
         display: contents;
     }
+}
+
+/*eight part*/
+
+.eight{
+    display: flex;
+    border-radius: 180px;
+    background: var(--healing-green-20, #D9F99D);
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.eight img{
+    position:relative;
+    padding: 3% 0 0 20%;
+}
+
+#top_phone{
+    display: none;
+    position: absolute;
+    padding-right: 200px;
+}
+
+.eight_right{
+    padding-right: 15%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.eight_right p {
+    display: flex;
+    height: 48px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    border: 1px solid var(--osler-gray-80, #2F3C33);
+    width: 50%;
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    /* Text md/Bold */
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.32px;
+}
+
+.eight_right h3 {
+    color: var(--osler-gray-80, #2F3C33);
+    /* Heading xl/ExtraBold */
+    font-family: Nunito;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 68px; /* 113.333% */
+    letter-spacing: -1.8px;
+}
+
+.eight_right a{
+    display: flex;
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 24px;
+    background: var(--osler-gray-80, #2F3C33);
+    color: var(--osler-gray-white, #FFF);
+    /* Text lg/ExtraBold */
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    text-decoration: none;
+}
+
+/*nine part*/
+
+.nine{
+    margin: 5%;
+    padding-top: 10%;
+    border-radius: 413.25px;
+    background: var(--osler-gray-70, #48524B);
+}
+
+.nine .nine_image_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nine p {
+    margin-top: 5%;
+    color: var(--osler-gray-20, #E3E4E3);
+    text-align: center;
+    /* Paragraph/xl */
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    letter-spacing: -0.2px;
 }
