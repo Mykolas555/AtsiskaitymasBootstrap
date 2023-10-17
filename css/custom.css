@@ -118,6 +118,7 @@ nav ul li{
     line-height: normal;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+    margin-top: 50%;
 }
 
 @media (max-width: 768px){
@@ -134,19 +135,19 @@ nav ul li{
 }
 
 #doctor {
-    position:absolute;
+    position: absolute;
     padding-right: 20%;
     padding-top: 15%;
 }
 
 #pulse{
-    position:absolute;
+    position: absolute;
     padding: 0 20% 15% 45%;
 }
 
 #nutrition{
     position:absolute;
-    padding: 10% 20% 0% 45% 
+    padding: 10% 20% 0% 45%;
 }
 
 @media (max-width: 768px) {
@@ -226,6 +227,10 @@ nav ul li{
     .responsive_none {
         display: none;
     }
+
+    .secondcontainer{
+        border-radius: 96px;
+    }
 }
 
 /*third part*/
@@ -251,6 +256,12 @@ nav ul li{
     letter-spacing: -1.44px;
 }
 
+@media (max-width: 768px){
+    .thirdcontainer{
+        border-radius: 96px;
+    }
+}
+
 
 
 /*fourth part*/
@@ -269,7 +280,12 @@ nav ul li{
    justify-content: space-between;
 }
 
-@media (max-width:576px){
+@media (max-width:768px){
+
+    .fourth{
+        border-radius: 96px;
+    }
+
     .four_box_one{
         display:flex;
         flex-direction: column;
@@ -633,6 +649,12 @@ nav ul li{
     text-align: left;
 }
 
+@media (max-width: 768px){
+    .sixth {
+        border-radius: 96px;
+    }
+}
+
 /*seven part*/
 
 .seven_header {
@@ -681,6 +703,10 @@ nav ul li{
         margin: 0 20% 0 20%;
         display: contents;
     }
+
+    .seven_responsive{
+        display: none;
+    }
 }
 
 /*eight part*/
@@ -692,14 +718,7 @@ nav ul li{
 }
 
 .eight img{
-    position:relative;
-    padding: 3% 0 0 20%;
-}
-
-#top_phone{
-    display: none;
-    position: absolute;
-    padding-right: 200px;
+    padding-left: 13%;
 }
 
 .eight_right{
@@ -761,7 +780,9 @@ nav ul li{
 
 @media (max-width: 768px){
 
-
+    .eight{
+        border-radius: 96px;
+    }
 
     .eight_left{
         order:2;
@@ -812,6 +833,7 @@ nav ul li{
 .nine_middle, .nine_left, .nine_right{
     display: flex;
     flex-direction: column;
+    ;
     
 }
 
@@ -829,7 +851,7 @@ nav ul li{
     align-items: center;
     gap: 10px;
     margin: 0 auto;
-    margin-top: %;
+    z-index: 10;
 }
 
 .nine_middle a {
@@ -902,6 +924,11 @@ nav ul li{
     text-align: center;
 }
 
+.nine_left img{
+    position:absolute;
+    z-index: 1;
+}
+
 @media (max-width: 768px){
     .nine_links{
         display: flex;
@@ -919,5 +946,13 @@ nav ul li{
     }
     .nine_right{
         order:2;
+    }
+
+    .nine{
+        border-radius: 96px;
+    }
+
+    .nine_privacy{
+        flex-wrap: wrap;
     }
 }
